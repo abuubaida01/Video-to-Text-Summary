@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarizer</title>
+    <meta name="description" content="This is just the start of our project, stay tune! for more updates.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color:rgb(225, 225, 225) ;">
+    <nav class="navbar" , style="background-color: #3a3939;">
+        <h1 class="navbar-brand; text-white">Summarizer</h1>
+        <ul class="nav navbar-nav">
+        </ul>
+    </nav>
+
+    <!-- books container -->
+    <div class="container">
+        <div class="row">
+            <div class="m-3 col-md-12">
+                <h1>Video to Text-Summary</h1>
+            </div>
+            <div class="container">
+                <div class="m-2 shadow-lg p-4 mb-4 bg-white card">
+                    <form method="post", action="/predict">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Past the link of YouTube Video, that should be both under 30 minutes and with Captions.</label>
+                            <textarea class="form-control"                           name="input_T/V" id="exampleFormControlTextarea1" rows="1" ></textarea>
+                        </div> 
+
+                        <!-- FOR SENDING DATA TO APP.PY  -->
+                            <div class="col-md-12 form-group" >
+                                <button class="btn btn-primary form-control"> Summarize
+                                </button>
+                            </div>                   
+                    </form> 
+                    <!-- let's make prediction space whenever i hit button this will show here -->
+                    <!-- <div class="col-md-12" ,style="text-align:center ;">
+                        <h3><span id="predict"></span></h3>
+                    </div> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
